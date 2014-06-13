@@ -1,0 +1,15 @@
+# libraries
+.buildwrapper/
+dist/
+
+# other machineries
+dist/
+out/
+
+# IDEA project files
+.idea/
+.idea_modules/
+*.iml
+*.cabal
+
+
