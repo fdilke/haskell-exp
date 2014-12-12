@@ -1,0 +1,24 @@
+name:              haskell-exp
+version:           1.0
+Build-Type:        Simple
+cabal-version:     >= 1.2
+
+executable haskell-exp
+  main-is:         Main.hs
+  hs-source-dirs:  src
+  build-depends:   base,
+                   containers
+
+test-suite haskell-exp-tests
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   test, src
+  main-is:          MainTestSuite.hs
+  build-depends:    base,
+                    test-framework,
+                    test-framework-hunit,
+                    test-framework-quickcheck2 >= 0.2.9,
+                    QuickCheck >= 2.4.0.1,
+                    random == 1.0.*,
+                    text >= 0.11.0.5,
+                    HUnit
+
