@@ -1,9 +1,7 @@
 # libraries
-.buildwrapper/
 dist/
 
 # other machineries
-dist/
 out/
 
 # IDEA project files

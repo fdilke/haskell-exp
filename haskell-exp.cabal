@@ -1,24 +1,38 @@
 name:              haskell-exp
 version:           1.0
+Synopsis:          Language feature TDD for Haskell
+Description:       Using Cabal as test framework for doctest and hspec
+Category:          LangFeature
 Build-Type:        Simple
-cabal-version:     >= 1.2
+cabal-version:     >= 1.10
+
+Library
+  Default-Language:     Haskell2010
+  GHC-Options:          -Wall
+  Exposed-Modules:      LangFeature.KickTyres
+  Build-Depends:        base >= 4 && < 5
+                      , array
+
+Source-Repository head
+  Type:                 git
+  Location:             https://github.com/fdilke/haskell-exp
 
 executable haskell-exp
-  main-is:         Main.hs
-  hs-source-dirs:  src
-  build-depends:   base,
-                   containers
+  Default-Language:     Haskell2010
+  main-is:              Main.hs
+  hs-source-dirs:       src
+  build-depends:        base,
+                        containers
 
-test-suite haskell-exp-tests
-  type:             exitcode-stdio-1.0
-  hs-source-dirs:   test, src
-  main-is:          MainTestSuite.hs
-  build-depends:    base,
-                    test-framework,
-                    test-framework-hunit,
-                    test-framework-quickcheck2 >= 0.2.9,
-                    QuickCheck >= 2.4.0.1,
-                    random == 1.0.*,
-                    text >= 0.11.0.5,
-                    HUnit
+Test-Suite spec
+  Type:                 exitcode-stdio-1.0
+  Default-Language:     Haskell2010
+  Hs-Source-Dirs:       test
+  Ghc-Options:          -Wall
+  Main-Is:              Spec.hs
+  Other-Modules:        KickTyresSpec
+  Build-Depends:        base
+                      , hspec >= 1.3
+                      , QuickCheck
+                      , haskell-exp
 
