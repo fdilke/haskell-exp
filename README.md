@@ -14,9 +14,6 @@ Setting up the IDE just requires:
 - configure the Haskell-platform-installed SDK
 - create the project with no SDK, then add the configured one
 
-To setup and run the tests:
-- cabal configure --enable-tests
-- cabal build
-- cabal test
+To setup and run the tests, run "build"
 
 
