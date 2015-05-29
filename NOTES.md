@@ -14,4 +14,8 @@ let fac 0 = 1
     
     sample function definition
             
-            
+:set prompt "λ "            
+
+    redefine command prompt
+    note, can put these in a ~/.ghci
+    
