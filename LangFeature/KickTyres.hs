@@ -1,4 +1,4 @@
-module LangFeature.KickTyres (doubleMe, tripleMe, involve, ack) where
+module KickTyres (doubleMe, tripleMe, involve, ack) where
 
 doubleMe :: Int -> Int
 doubleMe n = n + n
