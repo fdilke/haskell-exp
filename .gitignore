@@ -3,6 +3,7 @@ dist/
 
 # other machineries
 out/
+target/
 
 # IDEA project files
 .idea/

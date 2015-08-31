@@ -35,6 +35,7 @@ spec = do
         it "can concatenate lists" $
             [1 :: Int,2] ++ [3 :: Int,4] `shouldBe` [1 :: Int,2,3,4]
         it "can lexicographically compare lists" $
-            [2, 3, 4] < [2, 5, 1] `shouldBe` True
-
+            [2 :: Int, 3, 4] < [2 :: Int, 5, 1] `shouldBe` True
+        it "can define the fibonacci numbers" $
+            take 8 fibs `shouldBe` ([0 :: Int,1,1,2,3,5,8,13] :: [Int])
 
