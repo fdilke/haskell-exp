@@ -38,4 +38,8 @@ spec = do
             [2 :: Int, 3, 4] < [2 :: Int, 5, 1] `shouldBe` True
         it "can define the fibonacci numbers" $
             take 8 fibs `shouldBe` ([0 :: Int,1,1,2,3,5,8,13] :: [Int])
+        it "can test primality" $
+            isPrime 11 `shouldBe` True
+        it "can define the list of all primes" $
+            take 4 allPrimes `shouldBe` [2,3,5,7]
 
