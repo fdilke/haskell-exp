@@ -1,5 +1,7 @@
 # libraries
 dist/
+cabal.sandbox.config
+.cabal-sandbox/
 
 # other machineries
 out/
