@@ -16,8 +16,8 @@ To setup and run the tests, run "build"
 Using the HaskForce plugin for IDEA
 ===================================
 
-Open the project using "New Project...", then
-talling it NOT to create a new .cabal file. It will
+Open the project using "New Project...", make it a Haskell project, then
+tell it NOT to create a new .cabal file. It will
 use the existing one.
 
 You have to cabal-install ghc-mod, and configure

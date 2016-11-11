@@ -2,7 +2,7 @@ module FastLaneSpec where
 
 import FastLane
 import Test.Hspec
-import Test.Hspec.QuickCheck (prop)
+-- import Test.Hspec.QuickCheck (prop)
 
 spec :: Spec
 spec = do
