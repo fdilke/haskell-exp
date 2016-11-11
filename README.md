@@ -23,7 +23,8 @@ use the existing one.
 You have to cabal-install ghc-mod, and configure
 the locations of ghc-mod and ghc-modi in Settings/Haskell Tools.
 
-then configure HaskForce to use the sandbox in Settings/Haskell Compiler
+then configure HaskForce to use the sandbox in Settings/Haskell Compiler.
+Also enable tests and (although this doesn't seem to have any effect) autoinstallation of dependencies.
 
 There is then a cabal-sand-box-config and .cabal-sandbox/
 which I've thoughtfully listed in gitignore.
