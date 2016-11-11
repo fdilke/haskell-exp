@@ -3,7 +3,7 @@ module Newton(mySqrt) where
 import Data.List(find)
 
 newt :: Fractional a => a -> a -> a
-newt q x = (x + 2/x)/2
+newt q x = (x + q/x)/2
 
 closeEnough :: Ord a => Fractional a => a -> a -> a -> Bool
 closeEnough q tolerance est = (abs (est * est - q)) < tolerance
