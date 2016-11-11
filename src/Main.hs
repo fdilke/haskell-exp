@@ -1,4 +1,5 @@
 {-# LANGUAGE MultiParamTypeClasses, FunctionalDependencies, TypeFamilies #-}
+{-# LANGUAGE AllowAmbiguousTypes #-}
 
 module Main where
 
