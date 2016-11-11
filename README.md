@@ -8,11 +8,8 @@ exploration of language features". The idea is to:
 - use a test framework
 - add a test for each new language feature you learn about
 
-Setting up the IDE just requires:
-
-- use the IntelliJ plugin, not ideah
-- configure the Haskell-platform-installed SDK
-- create the project with no SDK, then add the configured one
+You have to use a Cabal sandbox:
+cabal sandbox init
 
 To setup and run the tests, run "build"
 
@@ -26,15 +23,17 @@ use the existing one.
 You have to cabal-install ghc-mod, and configure
 the locations of ghc-mod and ghc-modi in Settings/Haskell Tools.
 
-You have to use a Cabal sandbox:
-cabal sandbox init
-then configure HaskForce to use this in Settings/Haskell Compiler
+then configure HaskForce to use the sandbox in Settings/Haskell Compiler
 
 There is then a cabal-sand-box-config and .cabal-sandbox/
-which may as well be added to gitignore.
+which I've thoughtfully listed in gitignore.
+
+Also have to configure Haskell tools to look in somewhere like:
+/home/casper/casper/haskell-exp/.cabal-sandbox/bin/ghc-mod
+and install the tools with e.g. 'cabal install ghc-mod'
 
 If you do all this, the program should build/test/run correctly.
-If not, you might be able to investigate the cryptic error "buiold failed"
+If not, you might be able to investigate the cryptic error "build failed"
 by clicking on the bottom mini-pane (with the message) or the Messages tab.
 
 

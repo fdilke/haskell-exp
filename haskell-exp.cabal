@@ -30,8 +30,8 @@ Test-Suite spec
   hs-source-dirs:       test, LangFeature
   ghc-options:          -Wall
   main-is:              Spec.hs
-  build-depends:        base
-                      , hspec >= 1.3
-                      , QuickCheck
-                      , haskell-exp
+  build-depends:        base,
+                        hspec >= 1.3,
+                        QuickCheck,
+                        haskell-exp
 
