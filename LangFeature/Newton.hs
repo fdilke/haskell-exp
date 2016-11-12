@@ -11,9 +11,6 @@ closeEnough q tolerance est = (abs (est * est - q)) < tolerance
 standardTolerance :: Fractional a => a
 standardTolerance = 1e-6
 
--- debug :: Ord a => Fractional a => a -> Maybe a
--- debug q = (find (closeEnough q standardTolerance) (iterate (newt q) (q/2)))
-
 mySqrt :: Ord a => Fractional a => a -> a
 mySqrt q = case (find (closeEnough q standardTolerance) (iterate (newt q) (q/2))) of
     Just root -> root
