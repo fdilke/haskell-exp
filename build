@@ -2,7 +2,7 @@
 
 set -e
 
-cabal configure --enable-tests
-cabal build
-cabal test
+cabal --require-sandbox configure --enable-tests
+cabal --require-sandbox build
+cabal --require-sandbox test
 
